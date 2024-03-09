@@ -6,3 +6,7 @@
     font-family: metropolis;
     src: url(./assets/metropolis.otf);
   }
+  @font-face {
+    font-family: metropolis-bold;
+    src: url(./assets/metropolis.black.otf);
+  }
