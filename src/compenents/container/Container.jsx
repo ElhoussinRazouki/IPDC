@@ -7,7 +7,7 @@ const Container = () => {
        <div className=" absolute right-0 top-0 h-[682px] w-[50%] z-[-1] bg-[#FFEAF5]">
 </div>
 <div>
-  <img src={familyImg} alt="" className='absolute h-[690px] w-[62%] top-24 right-0' />
+  <img src={familyImg} alt="" className='absolute h-[590px] w-[62%] top-24 right-0' />
   
 </div>
 <div className='w-full flex justify-center '>
