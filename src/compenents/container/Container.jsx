@@ -13,7 +13,7 @@ const Container = () => {
   
 </div>
 <div className='w-full flex justify-center '>
-  <button className='flex  w-[191px] bg-white h-[71px] justify-center items-center rounded-[55px]  shadow-xl mt-7 ml-[27px] outline-none ' >
+  <button className='flex  w-[191px] bg-white h-[71px] justify-center items-center rounded-[55px]  shadow-2xl -mr-5 mt-7 ml-[27px] outline-none ' >
     <img src={car} alt="" className='w-[25.54px] mr-4 mr-5 ' />
   Car Loans
   </button>
@@ -26,8 +26,8 @@ const Container = () => {
   </h1>
   <p className='max-w-[380px]  text-[--gray-color]'>The harder you work for something, the greater you’ll feel when you achieve it.</p>
   <div className='space-x-6'>
-    <Button value="Apply Online" px="200px" py="13px"  />
-    <button className='outline-none border-[1px] border-[--pink-color] w-[188px] px-[20px] py-[13px] rounded-md  '>Loan Caclulator</button>
+    <Button value="Apply Online" px="2px" py="13px"  />
+    <button className='outline-none border-[1px] border-[--pink-color] w-[188px] px-[20px] py-[13px] rounded-md text-[--pink-color] font-[12px] '>Loan Caclulator</button>
   </div>
 </div>
 <button className='flex  w-[191px] bg-white h-[71px]   justify-center items-center rounded-[55px]  shadow-xl mt-7 ml-[27px] outline-none ' >

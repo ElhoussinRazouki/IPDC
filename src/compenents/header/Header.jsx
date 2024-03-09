@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         <div className="flex space-x-4 ">
         <div className="flex items-center justify-center p-2">
-        <img src={SearchIcon} alt="" className="h-[20.01px] w-[20px]" />
+        <img src={SearchIcon} alt="" className="h-[20.01px] w-[20px] cursor-pointer" />
         </div>
           <Button value="iSERVICE" px="20px"/>
         </div>
