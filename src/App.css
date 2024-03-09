@@ -1,0 +1,9 @@
+:root{
+  --pink-color:#ED017F;
+  --gray-color:#CCCCCC;
+
+}
+body{
+  background-color: white;
+  position: relative;
+}
