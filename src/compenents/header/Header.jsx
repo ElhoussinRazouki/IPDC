@@ -4,11 +4,11 @@ import SearchIcon from "../../assets/search.png"
 
 const Header = () => {
   return (
-    <nav className=" flex items-center  justify-between  py-[25px] px-[100px] z-10 font-[Metropolis] ">
+    <nav className=" flex items-center  justify-between  py-[25px] px-[130px] z-10 font-[Metropolis] ">
       <div><img src={logo} alt="IPDC logo"  className="w-[109px] h-[53px] cursor-pointer"/>
       </div>
       <div className="flex justify-between ">
-        <ul className="flex   space-x-9 w-[700px] tracking-[2px]   font-[bold]">
+        <ul className="flex   space-x-8 w-[700px] tracking-[2px]   font-[metropolis]">
         <li><a href="" className="">Retail</a><a href=""></a></li>
         <li><a href="">SME</a></li>
         <li><a href="">Corporate</a></li>
