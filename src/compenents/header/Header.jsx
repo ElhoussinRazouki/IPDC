@@ -23,7 +23,7 @@ const Header = () => {
         <div className="flex items-center justify-center p-2">
         <img src={SearchIcon} alt="" className="h-[20.01px] w-[20px]" />
         </div>
-          <Button value="iSERVICE" className=""/>
+          <Button value="iSERVICE" px="20px"/>
         </div>
      
 
