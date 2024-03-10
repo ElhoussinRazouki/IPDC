@@ -17,7 +17,9 @@ import {
   Corporate,
   Digital,
 } from "../../assets/iconCardExperience/iconCardExperience";
+import {autoLoan,Personal,Deposit,SAVING} from "../../assets/imgcardOurServices/imgOurServices"
 import CardExperience from "../cardExperience/CardExperience";
+import CardOurServices from "../cardOurServices/CardOurServices";
 import { etv, holcim, jummit, westin } from "../../assets/imgBUSINESS/BUSINESS";
 import imgIPCD from "../../assets/imgIPCD.png";
 
@@ -137,7 +139,7 @@ const Container = () => {
           />
         </div>
       </div>
-      <div className=" h-[449px]  py-20 overflow-hidden space-y-20 bg-[#FCE0EF] bg-opacity-[20%] ">
+      <div className="h-auto py-20 overflow-hidden space-y-20 bg-[#FCE0EF] bg-opacity-[20%] ">
         <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">
           BUSINESS PARTNERS{" "}
         </h1>
@@ -148,11 +150,11 @@ const Container = () => {
           <img src={etv} alt="" className="w-[185.71px] h-[110.36px]" />
         </div>
       </div>
-      <div className="flex space-x-25">
+      <div className="flex space-x-25 ">
         <div >
-          <img src={imgIPCD} alt="" className="h-[610px] w-[618px]" />
+          <img src={imgIPCD} alt="" className=" w-[618px]" />
         </div>
-        <div className="flex flex-col justify-center ">
+        <div className="flex flex-col justify-center  m-24">
           <h2 >IPDC AT A GLANCE</h2>
           <p className="max-w-[460px] max-h-[290px]">
             IPDC Finance Limited (previously known as "Industrial Promotion and
@@ -167,6 +169,23 @@ const Container = () => {
           <p>
           Read More <span><img src="" alt="" /></span>
           </p>
+        </div>
+      </div>
+      <div className="bg-[#FEF9FC] flex flex-col justify-center pt-24">
+        <div className="text-center">
+           <h1>
+        Our Services
+        </h1>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
+        </p>
+        </div>
+       
+        <div className="px-[130px] py-24 grid lg:grid-cols-4 space-x-12">
+       <CardOurServices cover={SAVING} title="IPDC SAVING SCHEMES"/>
+       <CardOurServices cover={Personal} title="IPDC SAVING SCHEMES"/>
+       <CardOurServices cover={Deposit} title="IPDC SAVING SCHEMES"/>
+       <CardOurServices cover={autoLoan} title="IPDC SAVING SCHEMES"/>
         </div>
       </div>
     </div>
