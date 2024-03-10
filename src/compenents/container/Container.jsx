@@ -17,11 +17,17 @@ import {
   Corporate,
   Digital,
 } from "../../assets/iconCardExperience/iconCardExperience";
-import {autoLoan,Personal,Deposit,SAVING} from "../../assets/imgcardOurServices/imgOurServices"
+import {
+  autoLoan,
+  Personal,
+  Deposit,
+  SAVING,
+} from "../../assets/imgcardOurServices/imgOurServices";
 import CardExperience from "../cardExperience/CardExperience";
 import CardOurServices from "../cardOurServices/CardOurServices";
 import { etv, holcim, jummit, westin } from "../../assets/imgBUSINESS/BUSINESS";
 import imgIPCD from "../../assets/imgIPCD.png";
+import StaticResult from "../staticResult/StaticResult";
 
 const Container = () => {
   return (
@@ -139,7 +145,7 @@ const Container = () => {
           />
         </div>
       </div>
-      <div className="h-auto py-20 overflow-hidden space-y-20 bg-[#FCE0EF] bg-opacity-[20%] ">
+      <div className="h-auto py-20 space-y-20 bg-[#FCE0EF] bg-opacity-[20%] ">
         <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">
           BUSINESS PARTNERS{" "}
         </h1>
@@ -151,11 +157,11 @@ const Container = () => {
         </div>
       </div>
       <div className="flex space-x-25 ">
-        <div >
+        <div>
           <img src={imgIPCD} alt="" className=" w-[618px]" />
         </div>
         <div className="flex flex-col justify-center  m-24">
-          <h2 >IPDC AT A GLANCE</h2>
+          <h2>IPDC AT A GLANCE</h2>
           <p className="max-w-[460px] max-h-[290px]">
             IPDC Finance Limited (previously known as "Industrial Promotion and
             Development Company of Bangladesh Limited") is the first private
@@ -167,37 +173,71 @@ const Container = () => {
             Government of Bangladesh
           </p>
           <p>
-          Read More <span><img src="" alt="" /></span>
+            Read More{" "}
+            <span>
+              <img src="" alt="" />
+            </span>
           </p>
         </div>
       </div>
       <div className="bg-[#FEF9FC] flex flex-col justify-center pt-24 leading-[50px]">
         <div className="text-center">
-           <h1 className="font-[metropolis-bold] text-[36px]">
-        Our Services
-        </h1>
-        <p className="font-[metropolis] text-[16px] text-[#999999]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
-        </p>
-        </div>
-       
-        <div className="px-[130px] py-24 flex justify-between space-x-12">
-       <CardOurServices cover={SAVING} title="IPDC SAVING SCHEMES"/>
-       <CardOurServices cover={Personal} title="IPDC SAVING SCHEMES"/>
-       <CardOurServices cover={Deposit} title="IPDC SAVING SCHEMES"/>
-       <CardOurServices cover={autoLoan} title="IPDC SAVING SCHEMES"/>
+          <h1 className="font-[metropolis-bold] text-[36px]">Our Services</h1>
+          <p className="font-[metropolis] text-[16px] text-[#999999]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam,
+            dapibus mattis vel feugiat erat tortor eleifend.
+          </p>
         </div>
 
+        <div className="px-[130px] py-24 flex justify-between space-x-12">
+          <CardOurServices cover={SAVING} title="IPDC SAVING SCHEMES" />
+          <CardOurServices cover={Personal} title="IPDC SAVING SCHEMES" />
+          <CardOurServices cover={Deposit} title="IPDC SAVING SCHEMES" />
+          <CardOurServices cover={autoLoan} title="IPDC SAVING SCHEMES" />
+        </div>
       </div>
       <div>
-      div className="text-center">
-           <h1 className="font-[metropolis-bold] text-[36px]">
-        Our Services
-        </h1>
-        <p className="font-[metropolis] text-[16px] text-[#999999]">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
-        </p>
-        
+        <div className="text-center">
+          <h1 className="font-[metropolis-bold] text-[36px]">Our Services</h1>
+          <p className="font-[metropolis] text-[16px] text-[#999999]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam,
+            dapibus mattis vel feugiat erat tortor eleifend.
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[130px] pr-[100px]">
+          <StaticResult static="57.6 bn" description="LOAN PORTFOLIO" />
+          <StaticResult
+            static="0.95%"
+            description="CLASSIFIED LOAN PORTFOLIO"
+          />
+          <StaticResult
+            static="388.5%"
+            description="CLASSIFIED LOAN Coverage"
+          />
+          <StaticResult static="50.4 bn" description="Deposit" />
+          <StaticResult static="6.1 bn" description="Shareholders equity" />
+          <StaticResult static="18.51%" description="Capital Adequacy Ratio" />
+          <StaticResult static="8.5 bn" description="Market Capitalization" />
+
+          <StaticResult static="AAA" description="Credit Rating" />
+        </div>
+      </div>
+      <div className=" space-y-20 py-14">
+        <div className="text-center">
+          <h1 className="font-[metropolis-bold] text-[36px]">Newsletter</h1>
+          <p className="font-[metropolis] text-[16px] text-[#999999]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac
+            quis aliquam arcu lacus.
+          </p>
+        </div>
+        <div className="flex justify-center space-x-2 ">
+          <input
+            type="text "
+            className="outline-none border-[#CCCCCC] border-[1px] rounded-sm h-[46px] w-[343px]"
+            placeholder="Your email"
+          />
+          <Button value="Subscribe"/>
+        </div>
       </div>
     </div>
   );
