@@ -7,11 +7,19 @@ import facebook from "../../assets/facebook.png";
 import youtube from "../../assets/youtube.png";
 import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin.png";
-import {Diversity,Integrity,Demonstrate,Teamwork,Collaboration,Technology,Corporate,Digital} from "../../assets/iconCardExperience/iconCardExperience";
+import {
+  Diversity,
+  Integrity,
+  Demonstrate,
+  Teamwork,
+  Collaboration,
+  Technology,
+  Corporate,
+  Digital,
+} from "../../assets/iconCardExperience/iconCardExperience";
 import CardExperience from "../cardExperience/CardExperience";
-import {etv,holcim,jummit,westin} from "../../assets/imgBUSINESS/BUSINESS";
-
-
+import { etv, holcim, jummit, westin } from "../../assets/imgBUSINESS/BUSINESS";
+import imgIPCD from "../../assets/imgIPCD.png";
 
 const Container = () => {
   return (
@@ -56,42 +64,110 @@ const Container = () => {
           <img src={telephone} alt="" />
           <p>16519</p>
           <div className="border-l-[1px] h-[24px] text-[--gray-color]"></div>
-          <img src={facebook} alt=""   />
-          <img src={youtube} alt=""    />
-          <img src={instagram} alt=""  />
+          <img src={facebook} alt="" />
+          <img src={youtube} alt="" />
+          <img src={instagram} alt="" />
           <img src={linkedin} alt="" />
         </div>
       </div>
-      
-      <div className="h-[820px]  py-24 space-y-24">
-      <div className="flex items-center flex-col space-y-7">
-      <h1 className="font-[metropolis-bold] max-w-[820px] text-[36px] font-extrabold leading-[43px] text-[#343434]">
-      Creating Extraordinary Customer Experience
-      </h1>
-      <p className="text-[#999999] max-w-[700px] text-[16px] text-center">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum eget morbi dignissim eu pharetra consequat montes, sagittis.
-      </p>
+
+      <div className="h-[820px]  py-24 space-y-24 pb-20 ">
+        <div className="flex items-center flex-col space-y-7">
+          <h1 className="font-[metropolis-bold] max-w-[820px] text-[36px] font-extrabold leading-[43px] text-[#343434]">
+            Creating Extraordinary Customer Experience
+          </h1>
+          <p className="text-[#999999] max-w-[700px] text-[16px] text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            bibendum eget morbi dignissim eu pharetra consequat montes,
+            sagittis.
+          </p>
+        </div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-14 pl-[130px] ">
+          <CardExperience
+            logo={Integrity}
+            title={"Integrity"}
+            details={
+              "Displaying the highest level of Integrity in the way we conduct our business"
+            }
+          />
+          <CardExperience
+            logo={Demonstrate}
+            title={"Demonstrate"}
+            details={"Demonstrating a strong Will to Win in the market place"}
+          />
+          <CardExperience
+            logo={Diversity}
+            title={"Diversity"}
+            details={"Promoting Diversity in the work place and community"}
+          />
+          <CardExperience
+            logo={Teamwork}
+            title={"Teamwork"}
+            details={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A semper aenean id pen"
+            }
+          />
+          <CardExperience
+            logo={Collaboration}
+            title={"Collaboration"}
+            details={
+              "Displaying the highest level of Integrity in the way we conduct our business"
+            }
+          />
+          <CardExperience
+            logo={Technology}
+            title={"Technology"}
+            details={
+              "Harnessing the power of Technology to deliver better customer experience"
+            }
+          />
+          <CardExperience
+            logo={Corporate}
+            title={"Corporate"}
+            details={
+              "Setting the standard for the best Corporate Citizenship in the communities we work"
+            }
+          />
+          <CardExperience
+            logo={Digital}
+            title={"Digital"}
+            details={
+              "Setting the standard for the best Corporate Citizenship in the communities we work"
+            }
+          />
+        </div>
       </div>
-         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-14 pl-[130px]">
-         <CardExperience logo={Integrity} title={"Integrity"} details={"Displaying the highest level of Integrity in the way we conduct our business"} />
-         <CardExperience logo={Demonstrate} title={"Demonstrate"} details={"Demonstrating a strong Will to Win in the market place"} />
-         <CardExperience logo={Diversity} title={"Diversity"} details={"Promoting Diversity in the work place and community"} />
-         <CardExperience logo={Teamwork} title={"Teamwork"} details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. A semper aenean id pen"} />
-         <CardExperience logo={Collaboration} title={"Collaboration"} details={"Displaying the highest level of Integrity in the way we conduct our business"} />
-         <CardExperience logo={Technology} title={"Technology"} details={"Harnessing the power of Technology to deliver better customer experience"} />
-         <CardExperience logo={Corporate} title={"Corporate"} details={"Setting the standard for the best Corporate Citizenship in the communities we work"} />
-         <CardExperience logo={Digital} title={"Digital"} details={"Setting the standard for the best Corporate Citizenship in the communities we work"} />
-         </div>
+      <div className=" h-[449px]  py-20 overflow-hidden space-y-20 bg-[#FCE0EF] bg-opacity-[20%] ">
+        <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">
+          BUSINESS PARTNERS{" "}
+        </h1>
+        <div className=" flex pl-[130px] space-x-32">
+          <img src={westin} alt="" className="w-[185.71px] h-[110.36px]" />
+          <img src={jummit} alt="" className="w-[185.71px] h-[110.36px]" />
+          <img src={holcim} alt="" className="w-[185.71px] h-[110.36px]" />
+          <img src={etv} alt="" className="w-[185.71px] h-[110.36px]" />
+        </div>
       </div>
-      <div className=" h-[449px]  py-20 overflow-hidden space-y-20 bg-[#FCE0EF] bg-opacity-[20%]">
-       
-            <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">BUSINESS PARTNERS </h1>
-              <div className=" flex pl-[130px] space-x-32">
-                 <img src={westin} alt="" className="w-[185.71px] h-[110.36px]"/>
-                <img src={jummit} alt=""  className="w-[185.71px] h-[110.36px]"/>
-                <img src={holcim} alt=""  className="w-[185.71px] h-[110.36px]"/>
-                <img src={etv} alt="" className="w-[185.71px] h-[110.36px]" /> 
-                </div>      
+      <div className="flex space-x-25">
+        <div >
+          <img src={imgIPCD} alt="" className="h-[610px] w-[618px]" />
+        </div>
+        <div className="flex flex-col justify-center ">
+          <h2 >IPDC AT A GLANCE</h2>
+          <p className="max-w-[460px] max-h-[290px]">
+            IPDC Finance Limited (previously known as "Industrial Promotion and
+            Development Company of Bangladesh Limited") is the first private
+            sector financial institution of the country established in 1981 by a
+            distinguished group of shareholders namely International Finance
+            Corporation (IFC), USA, German Investment and Development Company
+            (DEG), Germany, The Aga Khan Fund for Economic Development (AKFED),
+            Switzerland, Commonwealth Development Corporation (CDC), UK and the
+            Government of Bangladesh
+          </p>
+          <p>
+          Read More <span><img src="" alt="" /></span>
+          </p>
+        </div>
       </div>
     </div>
   );
