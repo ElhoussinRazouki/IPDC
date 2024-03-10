@@ -28,6 +28,7 @@ import CardOurServices from "../cardOurServices/CardOurServices";
 import { etv, holcim, jummit, westin } from "../../assets/imgBUSINESS/BUSINESS";
 import imgIPCD from "../../assets/imgIPCD.png";
 import StaticResult from "../staticResult/StaticResult";
+import Footer from "../footer/Footer";
 
 const Container = () => {
   return (
@@ -222,7 +223,7 @@ const Container = () => {
           <StaticResult static="AAA" description="Credit Rating" />
         </div>
       </div>
-      <div className=" space-y-20 py-14">
+      <div className=" space-y-20 py-28 bg-[#FEF9FC]">
         <div className="text-center">
           <h1 className="font-[metropolis-bold] text-[36px]">Newsletter</h1>
           <p className="font-[metropolis] text-[16px] text-[#999999]">
@@ -233,12 +234,13 @@ const Container = () => {
         <div className="flex justify-center space-x-2 ">
           <input
             type="text "
-            className="outline-none border-[#CCCCCC] border-[1px] rounded-sm h-[46px] w-[343px]"
+            className="outline-none border-[#CCCCCC] border-[1px] rounded-md h-[46px] w-[343px] p-3 text-[16px] text-opacity-[40%] text-[#999999]"
             placeholder="Your email"
           />
           <Button value="Subscribe"/>
         </div>
       </div>
+     <Footer/>
     </div>
   );
 };
