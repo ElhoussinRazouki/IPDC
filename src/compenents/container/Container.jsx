@@ -9,6 +9,7 @@ import instagram from "../../assets/instagram.png";
 import linkedin from "../../assets/linkedin.png";
 import {Diversity,Integrity,Demonstrate,Teamwork,Collaboration,Technology,Corporate,Digital} from "../../assets/iconCardExperience/iconCardExperience";
 import CardExperience from "../cardExperience/CardExperience";
+import {etv,holcim,jummit,westin} from "../../assets/imgBUSINESS/BUSINESS";
 
 
 
@@ -81,6 +82,16 @@ const Container = () => {
          <CardExperience logo={Corporate} title={"Corporate"} details={"Setting the standard for the best Corporate Citizenship in the communities we work"} />
          <CardExperience logo={Digital} title={"Digital"} details={"Setting the standard for the best Corporate Citizenship in the communities we work"} />
          </div>
+      </div>
+      <div className=" h-[449px]  py-20 overflow-hidden space-y-20 bg-[#FCE0EF] bg-opacity-[20%]">
+       
+            <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">BUSINESS PARTNERS </h1>
+              <div className=" flex pl-[130px] space-x-32">
+                 <img src={westin} alt="" className="w-[185.71px] h-[110.36px]"/>
+                <img src={jummit} alt=""  className="w-[185.71px] h-[110.36px]"/>
+                <img src={holcim} alt=""  className="w-[185.71px] h-[110.36px]"/>
+                <img src={etv} alt="" className="w-[185.71px] h-[110.36px]" /> 
+                </div>      
       </div>
     </div>
   );
