@@ -8,7 +8,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-between px-[130px] footer py-[64px] ">
+      <div className="flex justify-between px-[130px] footer py-[64px] mb-24 ">
         <div className="h-[192px] leading-[30px] flex flex-col justify-between">
           <h1>About the company</h1>
           <div>
@@ -17,7 +17,7 @@ const Footer = () => {
               Microsoft Patch{" "}
             </p>
           </div>
-          <div className="  flex  space-x-4">
+          <div className="  flex  space-x-4 pt-12">
             <img src={facebook} alt="" />
             <img src={youtube} alt="" />
             <img src={instagram} alt="" />
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="h-[192px] leading-[30px]">
           <h1>Products</h1>
-          <div>
+          <div className="leading-10">
             <p>CSR Activities</p>
             <p>Green Banking</p>
             <p>News</p>
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <div className="h-[192px] leading-[30px]">
           <h1>Get Started</h1>
-          <div>
+          <div className="leading-10">
             <p>Career</p>
             <p>Contact Us</p>
             <p>Government Securities</p>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <div className="h-[192px] leading-[30px]">
           <h1>About</h1>
-          <div>
+          <div className="leading-10">
             <p>IPDC at a Glance</p>
             <p>Mission, VIsion & Values</p>
             <p>Corporate Governanace</p>
@@ -54,9 +54,9 @@ const Footer = () => {
             <p>Investor Relations</p>
           </div>
         </div>
-         <div className="flex h-6">
+         <div className="flex h-6 space-x-2">
               < img src={telephone} alt="" />
-               <p>16519</p>
+               <h4 className="text-[17px]">16519</h4>
          </div>
       </div>
     </>

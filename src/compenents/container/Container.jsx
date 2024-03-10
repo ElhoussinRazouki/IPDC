@@ -237,7 +237,7 @@ const Container = () => {
             className="outline-none border-[#CCCCCC] border-[1px] rounded-md h-[46px] w-[343px] p-3 text-[16px] text-opacity-[40%] text-[#999999]"
             placeholder="Your email"
           />
-          <Button value="Subscribe"/>
+          <Button value="Subscribe" px="6px"/>
         </div>
       </div>
      <Footer/>
