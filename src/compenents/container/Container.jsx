@@ -73,7 +73,7 @@ const Container = () => {
         </div>
       </div>
 
-      <div className="h-[820px]  py-24 space-y-24 pb-20 ">
+      <div className="  py-24 space-y-24 pb-20 ">
         <div className="flex items-center flex-col space-y-7">
           <h1 className="font-[metropolis-bold] max-w-[820px] text-[36px] font-extrabold leading-[43px] text-[#343434]">
             Creating Extraordinary Customer Experience
@@ -84,7 +84,7 @@ const Container = () => {
             sagittis.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-14 pl-[130px] ">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[130px] pr-[100px] ">
           <CardExperience
             logo={Integrity}
             title={"Integrity"}
@@ -143,7 +143,7 @@ const Container = () => {
         <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">
           BUSINESS PARTNERS{" "}
         </h1>
-        <div className=" flex pl-[130px] space-x-32">
+        <div className=" flex justify-between pl-[130px] space-x-32">
           <img src={westin} alt="" className="w-[185.71px] h-[110.36px]" />
           <img src={jummit} alt="" className="w-[185.71px] h-[110.36px]" />
           <img src={holcim} alt="" className="w-[185.71px] h-[110.36px]" />
@@ -171,22 +171,33 @@ const Container = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#FEF9FC] flex flex-col justify-center pt-24">
+      <div className="bg-[#FEF9FC] flex flex-col justify-center pt-24 leading-[50px]">
         <div className="text-center">
-           <h1>
+           <h1 className="font-[metropolis-bold] text-[36px]">
         Our Services
         </h1>
-        <p>
+        <p className="font-[metropolis] text-[16px] text-[#999999]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
         </p>
         </div>
        
-        <div className="px-[130px] py-24 grid lg:grid-cols-4 space-x-12">
+        <div className="px-[130px] py-24 flex justify-between space-x-12">
        <CardOurServices cover={SAVING} title="IPDC SAVING SCHEMES"/>
        <CardOurServices cover={Personal} title="IPDC SAVING SCHEMES"/>
        <CardOurServices cover={Deposit} title="IPDC SAVING SCHEMES"/>
        <CardOurServices cover={autoLoan} title="IPDC SAVING SCHEMES"/>
         </div>
+
+      </div>
+      <div>
+      div className="text-center">
+           <h1 className="font-[metropolis-bold] text-[36px]">
+        Our Services
+        </h1>
+        <p className="font-[metropolis] text-[16px] text-[#999999]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
+        </p>
+        
       </div>
     </div>
   );
