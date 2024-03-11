@@ -5,6 +5,7 @@ import telephone from "../../assets/telephone.png";
 import facebook from "../../assets/facebook.png";
 import youtube from "../../assets/youtube.png";
 import instagram from "../../assets/instagram.png";
+import more from "../../assets/more.png";
 import linkedin from "../../assets/linkedin.png";
 import {
   Diversity,
@@ -57,10 +58,11 @@ const Container = () => {
               you achieve it.
             </p>
             <div className="space-x-6">
-            
-              <button className={`bg-[--pink-color] text-white font-light h-[46px] w-[157px] font-[Rubik] rounded-md tracking-[2px]`}>
-              Apply Online
-    </button>
+              <button
+                className={`bg-[--pink-color] text-white font-light h-[46px] w-[157px] font-[Rubik] rounded-md tracking-[2px]`}
+              >
+                Apply Online
+              </button>
               <button className="outline-none border-[1px] border-[--pink-color] w-[188px] px-[20px] h-[46px] rounded-md text-[--pink-color] font-[12px] ">
                 Loan Caclulator
               </button>
@@ -160,14 +162,15 @@ const Container = () => {
         </div>
       </div>
       <div className="flex space-x-25 ">
-        <div>
-          <img src={imgIPCD} alt="" className=" w-[618px]" />
-        </div>
-        <div className="flex flex-col justify-center  m-24">
-          <h2>IPDC AT A GLANCE</h2>
-          <p className="max-w-[460px] max-h-[290px]">
-            IPDC Finance Limited (previously known as "Industrial Promotion and
-            Development Company of Bangladesh Limited") is the first private
+        <img src={imgIPCD} alt="" className=" w-[43%] h-auto  h-[610px]" />
+
+        <div className="flex flex-col justify-center  px-24">
+          <h2 className=" font-[metropolis-bold] text-[32px] leading-[38px]  text-[#363940] ">
+            IPDC AT A GLANCE
+          </h2>
+          <p className="max-w-[460px] leading-[29px] text-[#676767] ">
+            IPDC Finance Limited (previously known as Industrial Promotion and
+            Development Company of Bangladesh Limited) is the first private
             sector financial institution of the country established in 1981 by a
             distinguished group of shareholders namely International Finance
             Corporation (IFC), USA, German Investment and Development Company
@@ -175,15 +178,15 @@ const Container = () => {
             Switzerland, Commonwealth Development Corporation (CDC), UK and the
             Government of Bangladesh
           </p>
-          <p>
-            Read More{" "}
-            <span>
-              <img src="" alt="" />
-            </span>
+          <p className="flex justify-between w-[137.75px] items-center text-[--pink-color] pt-10 text-[19.33px] cursor-pointer" >
+            Read More 
+           
+              <img src={more} alt="" className=" w-[29px] "  />
+      
           </p>
         </div>
       </div>
-      <div className="bg-[#FEF9FC] flex flex-col justify-center  leading-[50px] my-24">
+      <div className="bg-[#FEF9FC] flex flex-col justify-center  leading-[50px] ">
         <div className="text-center">
           <h1 className="font-[metropolis-bold] text-[36px]">Our Services</h1>
           <p className="font-[metropolis] text-[16px] text-[#999999]">
@@ -239,13 +242,15 @@ const Container = () => {
             className="outline-none border-[#CCCCCC] border-[1px] rounded-md h-[46px] w-[343px] p-3 text-[16px] text-opacity-[40%] text-[#999999]"
             placeholder="Your email"
           />
-         
-          <button className={`bg-[--pink-color] text-white h-[46px] w-[132px] font-[Rubik] rounded-md tracking-[2px]`}>
-          Subscribe
-    </button>
+
+          <button
+            className={`bg-[--pink-color] text-white h-[46px] w-[132px] font-[Rubik] rounded-md tracking-[2px]`}
+          >
+            Subscribe
+          </button>
         </div>
       </div>
-     <Footer/>
+      <Footer />
     </div>
   );
 };
