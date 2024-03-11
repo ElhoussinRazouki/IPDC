@@ -162,10 +162,10 @@ const Container = () => {
         </div>
       </div>
       <div className="flex space-x-25 ">
-        <img src={imgIPCD} alt="" className=" w-[43%] h-auto  h-[610px]" />
+        <img src={imgIPCD} alt="" className=" w-[43%]   h-[610px]" />
 
         <div className="flex flex-col justify-center  px-24">
-          <h2 className=" font-[metropolis-bold] text-[32px] leading-[38px]  text-[#363940] ">
+          <h2 className=" font-[metropolis-bold] text-[32px] leading-[38px]  text-[#363940] pb-4 ">
             IPDC AT A GLANCE
           </h2>
           <p className="max-w-[460px] leading-[29px] text-[#676767] ">
@@ -186,7 +186,7 @@ const Container = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#FEF9FC] flex flex-col justify-center  leading-[50px] ">
+      <div className="bg-[#FEF9FC] flex flex-col justify-center  leading-[50px] py-24 space-y-10 ">
         <div className="text-center">
           <h1 className="font-[metropolis-bold] text-[36px]">Our Services</h1>
           <p className="font-[metropolis] text-[16px] text-[#999999]">
@@ -195,23 +195,22 @@ const Container = () => {
           </p>
         </div>
 
-        <div className="px-[100px] py-24 flex justify-between space-x-12">
+        <div className="px-[100px]  flex justify-between  space-x-8">
           <CardOurServices cover={SAVING} title="IPDC SAVING SCHEMES" />
           <CardOurServices cover={Personal} title="IPDC SAVING SCHEMES" />
           <CardOurServices cover={Deposit} title="IPDC SAVING SCHEMES" />
           <CardOurServices cover={autoLoan} title="IPDC SAVING SCHEMES" />
         </div>
       </div>
-      <div>
-        <div className="text-center">
-          <h1 className="font-[metropolis-bold] text-[36px]">Our Services</h1>
-          <p className="font-[metropolis] text-[16px] text-[#999999]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam,
-            dapibus mattis vel feugiat erat tortor eleifend.
+      <div className="py-24 space-y-10">
+        <div className="flex flex-col items-center ">
+          <h1 className="font-[metropolis-bold] text-[36px]">Our best results for the year</h1>
+          <p className="font-[metropolis] text-[16px] text-[#999999] max-w-[610px] text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
           </p>
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[100px] pr-[100px]">
-          <StaticResult static="57.6 bn" description="LOAN PORTFOLIO" />
+          <StaticResult static={<spa className="font-[metropolis-bold] text-[36px] text-[--pink-color]"> 57.6 <span className="font-[metropolis-bold] text-[26px]">bn</span></spa>  } description="LOAN PORTFOLIO" />
           <StaticResult
             static="0.95%"
             description="CLASSIFIED LOAN PORTFOLIO"
@@ -220,7 +219,8 @@ const Container = () => {
             static="388.5%"
             description="CLASSIFIED LOAN Coverage"
           />
-          <StaticResult static="50.4 bn" description="Deposit" />
+          <StaticResult static={<spa className="font-[metropolis-bold] text-[36px] text-[--pink-color]"> 50.4 <span className="font-[metropolis-bold] text-[26px]">bn</span></spa>  }
+           description="Deposit" />
           <StaticResult static="6.1 bn" description="Shareholders equity" />
           <StaticResult static="18.51%" description="Capital Adequacy Ratio" />
           <StaticResult static="8.5 bn" description="Market Capitalization" />
@@ -228,10 +228,10 @@ const Container = () => {
           <StaticResult static="AAA" description="Credit Rating" />
         </div>
       </div>
-      <div className=" space-y-20 py-28 bg-[#FEF9FC]">
-        <div className="text-center">
-          <h1 className="font-[metropolis-bold] text-[36px]">Newsletter</h1>
-          <p className="font-[metropolis] text-[16px] text-[#999999]">
+      <div className=" space-y-10 py-28 bg-[#FEF9FC] text-center">
+        <div className="text-center space-y-4 flex flex-col items-center">
+          <h1 className="font-[metropolis-bold] text-[36px] text-[#343434] opacity-[80%]">Newsletter</h1>
+          <p className="font-[metropolis] text-[16px] text-[#999999] max-w-[410px] text-center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget ac
             quis aliquam arcu lacus.
           </p>
