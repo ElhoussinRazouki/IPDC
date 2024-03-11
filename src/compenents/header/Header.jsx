@@ -7,7 +7,7 @@ const Header = () => {
       <div><img src={logo} alt="IPDC logo"  className="w-[109px] h-[53px] cursor-pointer"/>
       </div>
       <div className="flex justify-between ">
-        <ul className="flex   space-x-8 w-[700px] tracking-[2px]   font-[metropolis]">
+        <ul className="flex   space-x-7 w-[700px] tracking-[2px]   font-[metropolis]">
         <li><a href="" className="">Retail</a><a href=""></a></li>
         <li><a href="">SME</a></li>
         <li><a href="">Corporate</a></li>
