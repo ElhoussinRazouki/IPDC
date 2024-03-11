@@ -1,5 +1,4 @@
 import familyImg from "../../assets/family.png";
-import Button from "../button/Button";
 import car from "../../assets/car.png";
 import house from "../../assets/house.png";
 import telephone from "../../assets/telephone.png";
@@ -58,8 +57,11 @@ const Container = () => {
               you achieve it.
             </p>
             <div className="space-x-6">
-              <Button value="Apply Online" px="2px" py="13px" />
-              <button className="outline-none border-[1px] border-[--pink-color] w-[188px] px-[20px] py-[13px] rounded-md text-[--pink-color] font-[12px] ">
+            
+              <button className={`bg-[--pink-color] text-white font-light h-[46px] w-[157px] font-[Rubik] rounded-md tracking-[2px]`}>
+              Apply Online
+    </button>
+              <button className="outline-none border-[1px] border-[--pink-color] w-[188px] px-[20px] h-[46px] rounded-md text-[--pink-color] font-[12px] ">
                 Loan Caclulator
               </button>
             </div>
@@ -91,7 +93,7 @@ const Container = () => {
             sagittis.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[130px] pr-[100px] ">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[100px] pr-[100px] ">
           <CardExperience
             logo={Integrity}
             title={"Integrity"}
@@ -150,7 +152,7 @@ const Container = () => {
         <h1 className="opacity-[80%] font-[metropolis] text-[23px] leading-[23px] tracking-[2.1px] text-center text-[#000000]">
           BUSINESS PARTNERS{" "}
         </h1>
-        <div className=" flex justify-between pl-[130px] space-x-32">
+        <div className=" flex justify-between pl-[100px] space-x-32">
           <img src={westin} alt="" className="w-[185.71px] h-[110.36px]" />
           <img src={jummit} alt="" className="w-[185.71px] h-[110.36px]" />
           <img src={holcim} alt="" className="w-[185.71px] h-[110.36px]" />
@@ -181,7 +183,7 @@ const Container = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[#FEF9FC] flex flex-col justify-center pt-24 leading-[50px]">
+      <div className="bg-[#FEF9FC] flex flex-col justify-center  leading-[50px] my-24">
         <div className="text-center">
           <h1 className="font-[metropolis-bold] text-[36px]">Our Services</h1>
           <p className="font-[metropolis] text-[16px] text-[#999999]">
@@ -190,7 +192,7 @@ const Container = () => {
           </p>
         </div>
 
-        <div className="px-[130px] py-24 flex justify-between space-x-12">
+        <div className="px-[100px] py-24 flex justify-between space-x-12">
           <CardOurServices cover={SAVING} title="IPDC SAVING SCHEMES" />
           <CardOurServices cover={Personal} title="IPDC SAVING SCHEMES" />
           <CardOurServices cover={Deposit} title="IPDC SAVING SCHEMES" />
@@ -205,7 +207,7 @@ const Container = () => {
             dapibus mattis vel feugiat erat tortor eleifend.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[130px] pr-[100px]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[100px] pr-[100px]">
           <StaticResult static="57.6 bn" description="LOAN PORTFOLIO" />
           <StaticResult
             static="0.95%"
@@ -231,13 +233,16 @@ const Container = () => {
             quis aliquam arcu lacus.
           </p>
         </div>
-        <div className="flex justify-center space-x-2 ">
+        <div className="flex justify-center space-x-3 ">
           <input
             type="text "
             className="outline-none border-[#CCCCCC] border-[1px] rounded-md h-[46px] w-[343px] p-3 text-[16px] text-opacity-[40%] text-[#999999]"
             placeholder="Your email"
           />
-          <Button value="Subscribe" px="6px"/>
+         
+          <button className={`bg-[--pink-color] text-white h-[46px] w-[132px] font-[Rubik] rounded-md tracking-[2px]`}>
+          Subscribe
+    </button>
         </div>
       </div>
      <Footer/>

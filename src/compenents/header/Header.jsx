@@ -1,4 +1,3 @@
-import Button from "../button/Button"
 import logo from "../../assets/ipcd.png"
 import SearchIcon from "../../assets/search.png"
 
@@ -23,7 +22,10 @@ const Header = () => {
         <div className="flex items-center justify-center p-2">
         <img src={SearchIcon} alt="" className="h-[20.01px] w-[20px] cursor-pointer" />
         </div>
-          <Button value="iSERVICE" px="20px"/>
+          
+          <button className={`bg-[--pink-color] font-normal text-white text-[12px] h-9 w-[108px] font-[Rubik] rounded-md tracking-[2px]`}>
+          iSERVICE
+    </button>
         </div>
      
 
